@@ -6,7 +6,7 @@ namespace PII_Game_Of_Life
     public class FileManager
     {
         public static bool[,] readBoard(){
-            string url = "C:/Users/matia/VISUAL/PII_Game_Of_Life/assets/board.txt";
+            string url = "C:/visualcode/Folders/enclases2.0/PII_Game_Of_Life/assets/board.txt";
             string content = File.ReadAllText(url);
             string[] contentLines = content.Split('\n');
             bool[,] board = new bool[contentLines.Length, contentLines[0].Length];
